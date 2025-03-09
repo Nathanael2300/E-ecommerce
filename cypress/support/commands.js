@@ -1,5 +1,3 @@
-import { faker } from '@faker-js/faker';
-
 Cypress.Commands.add('login', () => {
     cy.visit('https://www.saucedemo.com');
     cy.get('[data-test="username"]').type('standard_user');
