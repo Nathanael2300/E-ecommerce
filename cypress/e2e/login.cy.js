@@ -1,5 +1,5 @@
 describe('E-commerce Saucedemo - login de Usuário', () => {
-  beforeEach(() => {cy.visit('/'),cy.login()});
+  beforeEach(() => {cy.visit('/');cy.login()});
 
   it('Deve estar exibido o icone do carrinho', () => {
     cy.get('.shopping_cart_link').should('be.visible')
